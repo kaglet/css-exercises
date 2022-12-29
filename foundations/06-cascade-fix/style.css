@@ -2,10 +2,19 @@ body{
   font-family:Arial, Helvetica, sans-serif
 }
 
+/*There are no conflicts that could arise. All elements within the body must inherit this font-family property.*/
+
+/*We proceed by identifying which properties are not displaying as desired.
+Note: Remember in case of tie breaker the rule placed last is applied.*/
+
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
 }
 
 .small-para {
@@ -13,8 +22,10 @@ body{
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .confirm {
@@ -23,20 +34,14 @@ body{
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
+.text {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
