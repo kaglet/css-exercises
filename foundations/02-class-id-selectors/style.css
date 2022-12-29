@@ -1,0 +1,21 @@
+.odd{
+    background-color: hsla(350, 100%, 80%, 0.9);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+/*blue text and a font size of 36px*/
+
+#two{
+    color: rgb(00, 00, 255);
+    font-size: 36px;
+}
+
+.odd.special{
+    font-size: 24px;
+}
+
+#four{
+    background-color: #74f774;
+    font-size: 24px;
+    font-weight: bold;
+}
