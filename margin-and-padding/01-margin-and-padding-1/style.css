@@ -6,21 +6,21 @@ body {
 .one {
   background: pink;
   border: 3px solid blue;
-  padding: 30px;
-  margin: 9px;
+  padding: 40px 100px 40px 40px;
+  margin : 15px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
-  margin-bottom: 40px;
 }
 
 .three {
   background: peachpuff;
   border: 3px solid brown;
   width: 200px;
-  padding: 37px;
-  margin-left: 320px;
+  margin-top: 100px;
+  margin-left: auto;
+  padding: 30px 80px 30px 30px;
 }
 
