@@ -18,8 +18,11 @@ body {
 .modal {
   background: white;
   width: 480px;
+  display: flex;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
+  gap: 15px;
 }
 
 .icon {
@@ -63,4 +66,20 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.icon {
+  min-width: 50px;
+}
+
+.mini-container {
+  display: flex;
+  /*If I got extra space within parent distribute that space with properties you know*/
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.mini-container > div.header {
+  font-weight: bold;
+  font-size: large;
 }
