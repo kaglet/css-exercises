@@ -81,10 +81,10 @@ button.cancel {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /*I believe text content are pseudo elements so you can space between it and the icon.*/
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 8px; 
 }
 
 .text {
