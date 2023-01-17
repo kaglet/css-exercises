@@ -1,6 +1,35 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.header > div {
+  display: flex;
+  /* flex-grow: 1; */
+}
+
+
+/*What's the point of positioning the ul within its div?*/
+/* div.left-links > ul {
+  margin-right: auto;
+}
+
+div.right-links > ul {
+  margin-left: auto;
+} */
+
+div.left-links {
+  margin-right: auto;
+}
+
+div.right-links {
+  margin-left: auto;
 }
 
 .logo {
@@ -8,12 +37,28 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  /* padding: 4px 32px; */
+  padding: 0;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
+  flex-grow: 1; /*So the ul can grow to fill the space no need to set hard width*/
+}
+
+div.left-links > ul {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+div.right-links > ul {
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 a {
@@ -23,3 +68,19 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+
+
+/*Identify which are the parent containers, which are their children flex items, and if there is extra space to distribute within the parent container*/
+/*Check which children of which container you want to manipulate with flex rules.
+
+They are within their own ul flex container, they are spaced between.
+The logo is centered.
+Finally as we stretch the left-links container remains left justified and the right-links container remains right justified.
+Check if items are the right size, do we want the default values usually fit to content, or more than that.
+I want the divs to take the whole space but to justify the ul to the sides and put gap between elements.
+
+Sizes and default sizes will fuck you up.
+
+I just had to walk away for a bit then come back. It was all achievable in flex, as long as you view the boxes within boxes the right way. I did not want to restrict myself to the hard widths of a flow layout.
+The hard height constraint of the header box is still a problem. Can the height be related to content of the logo?*/
