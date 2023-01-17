@@ -28,7 +28,7 @@ img {
 /* SOLUTION */
 
 body {
-  text-align: center;
+  text-align: center; /*Can align text of the entire body, even within child elements.*/
 }
 
 .title {
@@ -42,5 +42,9 @@ body {
 }
 
 .info {
-  max-width: 200px;
+  /*By not setting to flex, block div with text content breaks onto new line, and setting width of parent still forces child to shrink*/
+  /*Flow and flex can both do some things you desire, don't need to switch out of flex.*/
+  /*The block element auto fits to parent, and shrinks only up to min-width I think*/
+  max-width: 200px; /*You are allowed to set hard pixel amounts*/ 
+  /*Setting max width is better, get control of the parent instead of child, can't grow beyond this*/
 }
