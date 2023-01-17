@@ -12,6 +12,29 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.left-aligned, .right-aligned {
+  display: flex;
+  gap: 15px;
+}
+
+ul {
+  display: flex;
+  gap: 8px;
+  padding-left: 0px;
+}
+
+div.left-aligned {
+  margin-right: auto; /*works with the extra space that's available in the parent, so check if parent div has auto fit to content. 
+  Rules are applied but there is no extra space.*/
+}
+
+div.right-aligned {
+  margin-left: auto;
 }
 
 .profile-image {

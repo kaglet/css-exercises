@@ -51,7 +51,9 @@ ul {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*Justify content is there to pin things against the end. There are only two big divs.*/ 
+  /*using margin auto on children is ok as it also distributes the extra space. Both are valid ways to distribute space.*/
+  /*Could also make flex items grow within the container then justify their own content to left and right. More convoluted but works.*/
   padding: 8px;
 }
 
@@ -59,11 +61,11 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 16px;
+  gap: 16px; /**/
 }
 
 .left, .right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 16px; /*gap adds the final spacing*/
 }
