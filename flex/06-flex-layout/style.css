@@ -5,6 +5,42 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body > div {
+  display: flex;
+}
+
+.footer, .header {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*While the element was centered, and the flex direction was column, items defaulted to start of container along main-axis*/
+  align-self: center; /*within its body flex container center this element*/
+  /*The element itself might be centered but make sure the elements within this element are centered.*/
+  /*What if I don't want them to extend the entire inline space across the cross axis, what if I want to center them.
+  That's what any other positioning other than stretch does.*/
+  gap: 8px;
 }
 
 img {
@@ -16,6 +52,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 0.4rem;
 }
 
 input {
@@ -24,4 +61,8 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.footer {
+  background-color: rgb(233, 230, 230);
 }
