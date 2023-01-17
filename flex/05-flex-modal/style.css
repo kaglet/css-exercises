@@ -69,7 +69,7 @@ button.cancel {
 }
 
 .icon {
-  min-width: 50px;
+  min-width: 50px; /*can set it so it doesn't shrink at all, instead of can't shrink past a certain point.*/
 }
 
 .mini-container {
@@ -77,9 +77,14 @@ button.cancel {
   /*If I got extra space within parent distribute that space with properties you know*/
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .mini-container > div.header {
   font-weight: bold;
   font-size: large;
+}
+
+.text {
+  margin-bottom: 9px; /*To not make it so crowded.*/
 }
