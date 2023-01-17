@@ -2,16 +2,13 @@
   font-family: monospace;
   background: papayawhip;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   padding: 10px;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .header > div {
   display: flex;
-  /* flex-grow: 1; */
 }
 
 
@@ -37,8 +34,7 @@ div.right-links {
   font-weight: 900;
   color: tomato;
   background: white;
-  /* padding: 4px 32px; */
-  padding: 0;
+  padding: 4px 32px; 
 }
 
 ul {
@@ -47,17 +43,17 @@ ul {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-left: 0;
+  padding-left: 0px;
   flex-grow: 1; /*So the ul can grow to fill the space no need to set hard width*/
 }
 
 div.left-links > ul {
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   gap: 8px;
 }
 
 div.right-links > ul {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   gap: 8px;
 }
 
