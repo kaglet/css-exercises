@@ -8,6 +8,15 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid: 
+  "header header" 1fr
+  "sidebar nav" 1fr
+  "sidebar article" 5fr
+  "footer footer" 1fr
+  / 1fr 3fr
+  ;
+  gap: 0.8rem;
 }
 
 .container div {
@@ -21,18 +30,22 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-area: nav;
 }
 
 .article {
   background-color: #bccbde;
+  grid-area: article;
 }
 
 .article p {
@@ -44,4 +57,11 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-area: footer;
 }
+
+/*
+Column size is flexible its about the discrete number 
+of items as you can see to decide the discrete number 
+of columns and rows.
+*/
